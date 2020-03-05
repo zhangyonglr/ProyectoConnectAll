@@ -6,17 +6,19 @@ import { MycategoriesComponent } from './mycategories/mycategories.component';
 import { PostComponent } from './post/post.component';
 import { TrenddingComponent } from './trendding/trendding.component';
 import { UserComponent } from './user/user.component';
+import { AppComponent } from './app.component';
 
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'post' },
+  { path: '', pathMatch: 'full', redirectTo: 'Home' },
+  { path: 'Home', component: AppComponent },
   { path: 'addpost', component: AddpostComponent },
   { path: 'header', component: HeaderComponent },
   { path: 'mycategories', component: MycategoriesComponent },
   { path: 'post', component: PostComponent },
   { path: 'trendding', component: TrenddingComponent },
   { path: 'user', component: UserComponent },
-  { path: '**', redirectTo: 'post' },
+  { path: '**', redirectTo: 'Home' },
 ];
 
 @NgModule({
