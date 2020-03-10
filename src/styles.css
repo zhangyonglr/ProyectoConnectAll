@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+
+body{
+    background-color: #EEF9FE;    
+}
+
+.wrapper{
+    display: flex;
+}
+
+.leftbar{
+    width: 20%;
+    padding: 2em;
+}
+
+.feed{
+    padding: 1em;
+    width: 40%;
+    margin: 0 6.5em;
+}

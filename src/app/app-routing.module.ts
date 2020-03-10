@@ -10,12 +10,13 @@ import { AppComponent } from './app.component';
 
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'Home' },
-  { path: 'Home', component: AppComponent },
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
+  {
+    path: 'home', component: PostComponent
+  },
   { path: 'addpost', component: AddpostComponent },
   { path: 'header', component: HeaderComponent },
   { path: 'mycategories', component: MycategoriesComponent },
-  { path: 'post', component: PostComponent },
   { path: 'trendding', component: TrenddingComponent },
   { path: 'user', component: UserComponent },
   { path: '**', redirectTo: 'Home' },
